@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Blank App</title>
+        <link rel="stylesheet" href="framework7.min.css">
+    </head>
+    <body>
+        <script src="framework7.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script>
+           
+             function g1() {    
+            document.getElementById('ponto').innerHTML = parseFloat(document.getElementById('ponto').innerHTML) + 1;
+            if(document.getElementById('ponto').innerHTML == 12 || document.getElementById('ponto').innerHTML > 12){
+               document.getElementById('gan1').innerHTML = parseFloat(document.getElementById('gan1').innerHTML) + 1;
+               document.getElementById('ponto').innerHTML = 0;    
+               document.getElementById('ponto2').innerHTML = 0;   
+            }
+        }
+            function g3() {    
+            document.getElementById('ponto').innerHTML = parseFloat(document.getElementById('ponto').innerHTML) + 3;
+                      document.getElementById('ponto').innerHTML = parseFloat(document.getElementById('ponto').innerHTML) + 1;
+          if(document.getElementById('ponto').innerHTML == 12 || document.getElementById('ponto').innerHTML > 12){
+               document.getElementById('gan1').innerHTML = parseFloat(document.getElementById('gan1').innerHTML) + 1;
+               document.getElementById('ponto').innerHTML = 0;    
+               document.getElementById('ponto2').innerHTML = 0;   
+            }
+        }   
+            function g6() {    
+            document.getElementById('ponto').innerHTML = parseFloat(document.getElementById('ponto').innerHTML) + 6;
+                      document.getElementById('ponto').innerHTML = parseFloat(document.getElementById('ponto').innerHTML) + 1;
+           if(document.getElementById('ponto').innerHTML == 12 || document.getElementById('ponto').innerHTML > 12){
+               document.getElementById('gan1').innerHTML = parseFloat(document.getElementById('gan1').innerHTML) + 1;
+               document.getElementById('ponto').innerHTML = 0;    
+               document.getElementById('ponto2').innerHTML = 0;   
+            }
+        }  
+            function g9() {    
+            document.getElementById('ponto').innerHTML = parseFloat(document.getElementById('ponto').innerHTML) + 9;
+                      document.getElementById('ponto').innerHTML = parseFloat(document.getElementById('ponto').innerHTML) + 1;
+           if(document.getElementById('ponto').innerHTML == 12 || document.getElementById('ponto').innerHTML > 12){
+               document.getElementById('gan1').innerHTML = parseFloat(document.getElementById('gan1').innerHTML) + 1;
+               document.getElementById('ponto').innerHTML = 0;    
+               document.getElementById('ponto2').innerHTML = 0;   
+            }
+        }  
+                function g12() {    
+            document.getElementById('ponto').innerHTML = parseFloat(document.getElementById('ponto').innerHTML) + 12;
+                          document.getElementById('ponto').innerHTML = parseFloat(document.getElementById('ponto').innerHTML) + 1;
+            if(document.getElementById('ponto').innerHTML == 12 || document.getElementById('ponto').innerHTML > 12){
+               document.getElementById('gan1').innerHTML = parseFloat(document.getElementById('gan1').innerHTML) + 1;
+               document.getElementById('ponto').innerHTML = 0;    
+               document.getElementById('ponto2').innerHTML = 0;   
+            }
+        }  
+        
+        
+                 function ga1() {    
+            document.getElementById('ponto2').innerHTML = parseFloat(document.getElementById('ponto2').innerHTML) + 1;
+              if(document.getElementById('ponto2').innerHTML == 12 || document.getElementById('ponto2').innerHTML > 12){
+               document.getElementById('gan2').innerHTML = parseFloat(document.getElementById('gan2').innerHTML) + 1;
+               document.getElementById('ponto').innerHTML = 0;    
+               document.getElementById('ponto2').innerHTML = 0;   
+            }
+        }
+            function ga3() {    
+            document.getElementById('ponto2').innerHTML = parseFloat(document.getElementById('ponto2').innerHTML) + 3;
+                      if(document.getElementById('ponto2').innerHTML == 12 || document.getElementById('ponto2').innerHTML > 12){
+               document.getElementById('gan2').innerHTML = parseFloat(document.getElementById('gan2').innerHTML) + 1;
+               document.getElementById('ponto').innerHTML = 0;    
+               document.getElementById('ponto2').innerHTML = 0;   
+            }
+        }   
+            function ga6() {    
+            document.getElementById('ponto2').innerHTML = parseFloat(document.getElementById('ponto2').innerHTML) + 6;
+                      if(document.getElementById('ponto2').innerHTML == 12 || document.getElementById('ponto2').innerHTML > 12){
+               document.getElementById('gan2').innerHTML = parseFloat(document.getElementById('gan2').innerHTML) + 1;
+               document.getElementById('ponto').innerHTML = 0;    
+               document.getElementById('ponto2').innerHTML = 0;   
+            }
+        }  
+            function ga9() {    
+            document.getElementById('ponto2').innerHTML = parseFloat(document.getElementById('ponto2').innerHTML) + 9;
+             if(document.getElementById('ponto2').innerHTML == 12 || document.getElementById('ponto2').innerHTML > 12){
+               document.getElementById('gan2').innerHTML = parseFloat(document.getElementById('gan2').innerHTML) + 1;
+               document.getElementById('ponto').innerHTML = 0;    
+               document.getElementById('ponto2').innerHTML = 0;   
+            }
+        }  
+                function ga12() {    
+            document.getElementById('ponto2').innerHTML = parseFloat(document.getElementById('ponto2').innerHTML) + 12;
+              if(document.getElementById('ponto2').innerHTML == 12 || document.getElementById('ponto2').innerHTML > 12){
+               document.getElementById('gan2').innerHTML = parseFloat(document.getElementById('gan2').innerHTML) + 1;
+               document.getElementById('ponto').innerHTML = 0;    
+               document.getElementById('ponto2').innerHTML = 0;   
+            }
+        }    
+            
+        function nova () {
+             document.getElementById('ponto2').innerHTML = 0;
+             document.getElementById('ponto').innerHTML = 0;
+        }   
+        
+        function nova_j() {
+             document.getElementById('ponto2').innerHTML = 0;
+             document.getElementById('ponto').innerHTML = 0; 
+             document.getElementById('gan1').innerHTML = 0;
+             document.getElementById('gan2').innerHTML = 0;
+        }    
+        </script>    
+ <div class="page">
+  <div class="navbar color-red">
+      <h3 style="text-align: center; margin-top: 2%; font-size: 30px">Carteado</h3>
+   </div>
+     <div class="page-content">
+         <div style="margin: 16px;">     
+           <span class="badge color-green" style="font-size: 20px; margin-right: 8%; width: 45%;">Ganho:<b id="gan1">0</b></span>
+           <span class="badge color-green" style="font-size: 20px; width: 45%;">Ganho: <b id="gan2">0</b></span>
+        </div>
+        <div style="margin-left: 16px; margin-right: 16px;"> 
+          <span class="badge color-grey" style="font-size: 15px; margin-right: 8%; width: 45%;">Grupo 1</span>
+          <span class="badge color-grey" style="font-size: 15px; width: 45%;">Grupo 2</span>     
+        </div>
+        <div style="margin: 16px"> 
+          <span class="badge color-green" style="font-size: 100px; margin-right: 8%; width: 45%;" id="ponto">0</span>
+          <span class="badge color-green" style="font-size: 100px; width: 45%;" id="ponto2">0</span>
+        </div>
+          <div style="margin: 15px">
+             <p class="segmented segmented-raised color-green">
+                <button class="button" onclick="g1()">1</button>
+                <button class="button" onclick="g3()">3</button>
+               <button class="button" onclick="g6()">6</button>
+                <button class="button" onclick="g9()">9</button>
+                 <button class="button" onclick="g12()">12</button>
+                  <button class="button" onclick=""></button>
+                <button class="button" onclick="ga1()">1</button>
+                 <button class="button" onclick="ga3()">3</button>
+                <button class="button" onclick="ga6()">6</button>
+                 <button class="button" onclick="ga9()">9</button>
+                <button class="button" onclick="ga12()">12</button>
+              </p>
+        </div> 
+        <div class="block">
+  
+            <button class="col button button-big button-fill color-red" style="height: 80px; font-size: 20px;" onclick="nova()">Nova Partida</button><br>
+            <button class="col button button-big button-fill color-red" style="height: 80px; font-size: 20px;" onclick="nova_j()">Novo Jogo</button>  
+         
+        </div>
+     </div>
+  </div>
+      
+        <script>
+    
+        var app = new Framework7({
+          // App root element
+          root: '#app',
+          // App Name
+          name: 'My App',
+          // App id
+          id: 'com.myapp.test',
+          // Enable swipe panel
+          panel: {
+            swipe: 'left',
+          },
+          // Add default routes
+          routes: [
+            {
+              path: '/about/',
+              url: 'about.html',
+            },
+          ],
+          // ... other parameters
+        });
+
+        var mainView = app.views.create('.view-main');
+        
+        </script>
+    </body>
+</html>
